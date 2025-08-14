@@ -16,18 +16,66 @@ html {
   font-size: 18px;
 }
 
-/* Sitio web responsive */
-@media (max-width: 768px) {
-  .acerca-de-mi,
-  .estadisticas,
-  .proyectos-destacados,
-  .skills-section,
-  .habilidades-blandas,
-  .aviso,
-  .privacidad,
-  .mis-proyectos {
-    padding-left: 1rem;
-    padding-right: 1rem;
+/* Menu desplegable pantallas pequeñas */
+@media (max-width: 509px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0rem;
+  }
+  
+  .logo {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .logo img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .logo span {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 0.2rem 0.75rem;
+    font-size: 0.7rem;
+  }
+
+  .dropdown-menu {
+    position: static;
+    top: 0;
+    left: 0;
+    margin-top: -0.8rem;
+    background-color: black;
+    width: 100%;
+    padding: 0;
+    z-index: 10;
+  }
+
+  .dropdown-menu li a {
+    padding: 0.2rem 0.75rem;
+    font-size: 0.7rem;
+  }
+
+  .portada img {
+    padding-top: 4rem;
   }
 }
 
@@ -40,7 +88,7 @@ html {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #000;
+  background-color: black;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -73,7 +121,7 @@ html {
 }
 
 .nav-links a {
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 2vw, 1rem);
   position: relative;
   padding: 1rem;
   color: white;
@@ -84,7 +132,7 @@ html {
   background-color: #494949;
 }
 
-/* Menu desplegable hacia abajo */
+/* Menu desplegable pantallas grandes */
 .dropdown {
   position: relative;
 }
@@ -94,7 +142,7 @@ html {
   position: absolute;
   top: 160%;
   right: 0;
-  background-color: #000;
+  background-color: black;
   list-style: none;
   padding: 0.5rem 0rem;
   min-width: 10rem;
@@ -102,6 +150,7 @@ html {
 
 .dropdown-menu li a {
   display: block;
+  font-size: clamp(0.8rem, 2vw, 1rem);
   padding: 0.5rem 1rem;
   color: white;
   text-decoration: none;
@@ -112,7 +161,7 @@ html {
 }
 
 /* Imagen de portada */
-.hero-image img {
+.portada img {
   width: 100%;
   height: auto;
 }
@@ -120,27 +169,31 @@ html {
 /* Titulos del sitio web */
 .titulo {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
   color: white;
   background-color: #00aaff;
-  padding: 1rem 0rem;
+  padding: 1rem;
 }
 
 /* Subtitulos del sitio web */
 .subtitulo {
   text-align: center;
-  font-size: 2rem;
+  font-size: clamp(1.3rem, 2vw, 2.3rem);
   color: black;
   background-color: #eaf5fa;
-  padding: 1rem 0rem;
+  padding: 1rem;
 }
 
 /* Pagina index (Mi curriculo) */
 .acerca-de-mi {
-  padding: 1rem 15rem;
   background-color: #ffffff;
   color: #333;
-  margin: auto;
+  padding: 1rem 1.5rem;
+  /* Espaciado lateral moderado */
+  max-width: 50rem;
+  /* Limita el ancho en pantallas grandes */
+  margin: 0 auto;
+  /* Centra horizontalmente */
 }
 
 .perfil {
@@ -152,10 +205,13 @@ html {
 }
 
 .foto-perfil {
-  width: 12rem;
+  padding: 0.2rem;
+  width: 100%;
   height: auto;
+  max-width: 14rem;
+  margin: 0 auto;
+  object-fit: contain;
   border-radius: 1.5rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .perfil p {
@@ -169,7 +225,12 @@ html {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  padding: 1rem 15rem;
+  padding: 1rem 1.5rem;
+  /* Espaciado lateral moderado */
+  max-width: 50rem;
+  /* Limita el ancho en pantallas grandes */
+  margin: 0 auto;
+  /* Centra horizontalmente */
   background-color: #ffffff;
   flex-wrap: wrap;
   text-align: center;
@@ -216,9 +277,13 @@ html {
 }
 
 .proyectos-destacados {
-  padding: 2rem 15rem;
+  padding: 1rem 1.5rem;
+  /* Espaciado lateral moderado */
+  max-width: 50rem;
+  /* Limita el ancho en pantallas grandes */
+  margin: 0 auto;
+  /* Centra horizontalmente */
   background-color: #ffffff;
-  margin: auto;
 }
 
 .proyectos-grid-1 {
@@ -228,10 +293,12 @@ html {
 }
 
 .proyectos-1-img {
-  width: 11.3rem;
+  padding: 0.2rem;
+  width: 100%;
   height: auto;
+  max-width: 13rem;
+  margin: 0 auto;
   object-fit: contain;
-  margin-bottom: 0.5rem;
 }
 
 .ver-todos {
@@ -267,8 +334,12 @@ html {
 }
 
 .skills-section {
-  padding: 1rem 15rem;
-  margin: auto;
+  padding: 1rem 1.5rem;
+  /* Espaciado lateral moderado */
+  max-width: 50rem;
+  /* Limita el ancho en pantallas grandes */
+  margin: 0 auto;
+  /* Centra horizontalmente */
   text-align: center;
 }
 
@@ -303,9 +374,13 @@ html {
 }
 
 .habilidades-blandas {
-  padding: 1rem 15rem;
+  padding: 1rem 1.5rem;
+  /* Espaciado lateral moderado */
+  max-width: 50rem;
+  /* Limita el ancho en pantallas grandes */
+  margin: 0 auto;
+  /* Centra horizontalmente */
   text-align: center;
-  margin: auto;
 }
 
 .charts-container {
@@ -358,23 +433,35 @@ html {
 
 /* Pagina privacidad (Politica de privacidad) */
 .aviso {
+  padding: 1rem 0rem;
+  width: 100%;
   background-color: #eaf5fa;
-  padding: 1rem 15rem;
-  margin: auto;
   color: black;
 }
 
 .aviso p {
+  padding: 0rem 1.5rem;
+  /* Espaciado lateral moderado */
+  max-width: 50rem;
+  /* Limita el ancho en pantallas grandes */
+  margin: 0 auto;
+  /* Centra horizontalmente */
   text-align: justify;
   line-height: 1.5;
 }
 
 .privacidad {
-  background-color: #ffffff;
-  padding-left: 15rem;
-  padding-right: 15rem;
+  padding-left: 1.5rem;
+  /* Espaciado lateral moderado */
+  padding-right: 1.5rem;
+  /* Espaciado lateral moderado */
   padding-bottom: 1rem;
-  margin: auto;
+  /* Espaciado lateral moderado */
+  max-width: 50rem;
+  /* Limita el ancho en pantallas grandes */
+  margin: 0 auto;
+  /* Centra horizontalmente */
+  background-color: #ffffff;
   color: black;
 }
 
@@ -400,9 +487,13 @@ html {
 
 /* Pagina proyectos (Mis proyectos) */
 .mis-proyectos {
-  padding: 1rem 15rem;
+  padding: 1rem 1.5rem;
+  /* Espaciado lateral moderado */
+  max-width: 50rem;
+  /* Limita el ancho en pantallas grandes */
+  margin: 0 auto;
+  /* Centra horizontalmente */
   background-color: #ffffff;
-  margin: auto;
   text-align: center;
 }
 
@@ -440,10 +531,12 @@ html {
 }
 
 .proyectos-2-img {
-  width: 18.9rem;
+  padding: 0.2rem;
+  width: 100%;
   height: auto;
+  max-width: 21rem;
+  margin: 0 auto;
   object-fit: contain;
-  margin-bottom: 0.5rem;
 }
 
 /* Pie de pagina */
@@ -456,12 +549,12 @@ html {
 }
 
 .footer h2 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
   margin-bottom: 0.5rem;
 }
 
 .footer p {
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 2vw, 1rem);
   max-width: 36rem;
   margin: 0 auto 1.5rem;
   line-height: 1.5;
@@ -481,5 +574,4 @@ html {
 
 .footer-icons a:hover img {
   transform: scale(1.1);
-
 }
