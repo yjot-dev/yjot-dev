@@ -296,7 +296,7 @@ html {
   padding: 0.2rem;
   width: 100%;
   height: auto;
-  max-width: 13rem;
+  max-width: 24rem;
   margin: 0 auto;
   object-fit: contain;
 }
@@ -534,7 +534,7 @@ html {
   padding: 0.2rem;
   width: 100%;
   height: auto;
-  max-width: 21rem;
+  max-width: 30rem;
   margin: 0 auto;
   object-fit: contain;
 }
