@@ -3,24 +3,24 @@
 <h2 align="center">👋 Acerca de mí</h2>
 
 <p align="justify">
-Soy Yasser Ortiz T., Ingeniero de Sistemas graduado en la Universidad Técnica de Machala. 
-Con más de 3 años de experiencia transformando ideas en productos digitales robustos, me especializo en el ecosistema Android moderno y complemento con desarrollo Backend.
+Hola, soy Yasser Ortiz  
+Ingeniero de Sistemas y Desarrollador Android con 4 años de experiencia en apps móviles nativas. Mi enfoque está en el ecosistema Android moderno, trabajando con Kotlin, Jetpack Compose y XML, aplicando arquitecturas MVVM y Clean Architecture, y garantizando calidad con DI Hilt y pruebas unitarias/instrumentales.
 </p>
 
-- 🚀 Desarrollo móvil nativo en **Android** con **Kotlin** y **Jetpack Compose**
-- 🧩 Arquitecturas: **Hexagonal (Puertos y Adaptadores)** y **MVVM**
-- 🔍 Testing unitario e instrumental para garantizar estabilidad
-- 🛠️ Inyección de dependencias con **Hilt**
-- 🌐 Backend con **Node.js** y **MySQL**, diseño de APIs REST eficientes
-- 🤖 Integro herramientas de IA (**Copilot/Gemini**) en mi flujo de trabajo para optimizar pruebas y lógica de negocio
-- 📖 Aprendizaje continuo, comunicación asertiva y trabajo en equipo
+🔧 Stack principal
+- Lenguajes y frameworks: Kotlin, Jetpack Compose, XML, Node.js
+- Bases de datos: MySQL (local y remoto con Aiven)
+- Herramientas: Android Studio, VS Code, MySQL Workbench, Google Cloud, Canva
 
-<h2 align="center">📌 Mis mejores proyectos</h2>
+🧪 Testing & IA
+- Pruebas unitarias e instrumentales en todas mis apps.
+- Integración de IA (Copilot, Gemini) para optimizar código, pruebas y resolución de bugs.
 
-- 🧩 **ARI (Reportero de Incidentes)** → [Ver repositorio](https://github.com/yjot-dev/Rep-AccidentReporter/tree/v2-test)  
-- 🧩 **EMP (App Educativa de Emprendimiento)** → [Ver repositorio](https://github.com/yjot-dev/Rep-EMP/tree/v3-test)
+📂 Portafolio
+- Actualmente cuento con 8 aplicaciones móviles documentadas y subidas a GitHub, que reflejan mi compromiso con el código limpio, escalabilidad y buenas prácticas.
+- Puedes dar un vistazo a mi portafolio [aqui](https://yjot-dev.github.io/)
 
-<h2 align="center">🛠️ Lenguajes y Herramientas</h2>
+<h2 align="center">🛠️ Stack General</h2>
 
 <div align="center">
   <table>
